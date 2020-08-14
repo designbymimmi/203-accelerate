@@ -17,11 +17,57 @@ body {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
 }
 
+#primary {
+  margin-bottom: 0;
+}
+
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 }
 .button {
 	background: none repeat scroll 0 0 #45ac9d;
+}
+
+/* featured work on homepage */
+.featured-work .site-content {
+  margin: 0 auto;
+}
+.featured-work h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 2.25em 0;
+}
+.homepage-featured-work {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+.individual-featured-work {
+  margin-bottom: 2em;
+}
+.individual-featured-work a {
+	display: block;
+}
+.individual-featured-work h3 {
+  font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
+}
+
+.featured-work ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+
+.featured-work ul li {
+  width: 30%;
+}
+
+.featured-work img {
+  height: 215px;
 }
 
 /* blog post on homepage */
@@ -36,16 +82,86 @@ body {
 	font-size: 1.5em;
 }
 .read-more-link {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #45ac9d;
 	text-transform: uppercase;
 }
 
+/* Case Study Archive */
+
+.case-study {
+  margin-bottom: 50px;
+}
+
+/* Case Study Single Page */
+
+.case-study-sidebar {
+  width: 30%;
+  float: left;
+}
+.case-study-sidebar h5 {
+  color: #878787;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.case-study-sidebar h2, h6 {
+  font-weight: 400;
+}
+
+.case-study-images {
+  width: 60%;
+  float: right;
+}
+
+.case-study-images img {
+  object-fit: fill;
+  margin-bottom: 75px;
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+
+.social-media-navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.social-media-navigation span {
+  display: none;
+}
+
+.social-media-navigation ul {
+  width: 100%;
+}
+
+.social-media-navigation li {
+  display: inline-flex;
+}
+
+.social-media-navigation li a {
+  color: #fff;
+  background-color: #3b3b3b;
+  border-radius: 50%;
+  padding: 1px 0px 0px 3px;
+}
+
+.menu-social-media-nav-container ul {
+  list-style: none;
+}
+
+.menu-social-media-nav-container ul {
+  list-style: none;
+}
+
+
 /* Media Queries */
 @media (min-width: 768px) {
     .blog-post {
-    	width: 50%;
-    	float: left;
-        margin-bottom: 2em;
+      width: 50%;
+      float: left;
+      margin-bottom: 2em;
 	}
 }
