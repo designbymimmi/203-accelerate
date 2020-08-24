@@ -12,6 +12,8 @@ Text Domain:  accelerate-theme-child
 
 body {
   background-color: none;
+  padding: 0;
+  margin: 0;
 }
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
@@ -71,6 +73,12 @@ body {
 }
 
 /* blog post on homepage */
+
+.recent-posts {
+  float: left;
+  width: 480px;
+  padding: 0 1.5em 0 2em;
+}
 
 .blog-post h4 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
@@ -156,9 +164,189 @@ body {
   list-style: none;
 }
 
+/* Contact Page */
+
+.nf-form-content  #nf-field-1-container, .nf-form-content  #nf-field-2-container {
+  display: inline-block;
+  width: 48%;
+}
+
+.nf-form-content  #nf-field-1-container {
+  margin-right: 28px;
+}
+
+.nf-field-element #nf-field-4 {
+  background-color: #45ac9d;
+  float: right;
+}
+
+/* About Page */
+
+header .about-header {
+  background-image: url(img/about-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 290px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.about-header h2 {
+  font-family: "Open Sans";
+  font-weight: normal;
+  padding-top: 60px;
+}
+
+.about-header h2,
+.about-services {
+  margin: auto;
+  text-align: center;
+  width: 600px;
+}
+
+.about-services {
+  margin-bottom: 50px;
+}
+
+.about-articles {
+  margin-top: 350px;
+}
+
+.about-strategy {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-strategy h2 {
+  font-family: "Open Sans";
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.about {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.about-sidebar {
+  width: 66%;
+}
+
+.box-1,
+.box-3 {
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.box-2 .about-images ,
+.box-4 .about-images {
+  float: right;
+  text-align: right;
+}
+
+.about-services h4 {
+  text-transform: uppercase;
+}
+
+.about-images {
+  margin: auto 0;
+  width: 33%;
+}
+
+.about-images img {
+  height: 230px;
+  width: 230px;
+}
+
+.about-contact {
+  border-top: 1px solid #909090;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.about-contact h4 {
+  font-family: "Open Sans";
+  font-size: 25px;
+  margin-right: 25px;
+  width: 390px;
+}
+
+.about-contact .button {
+  border: none;
+  height: 55px;
+  width: 240px;
+  margin-bottom: -28px;
+}
+
+/* 404-Page */
+
+.site-content .error-404 {
+  background-image: url(img/lost.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 500px;
+}
+
+.error-404 h2 {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.error-404 p {
+  width: 50%;
+}
+
+.error-404 p i {
+  font-style: italic;
+}
+
+.error-404 a {
+  font-weight: bold;
+}
+
+.error-404 a:hover {
+  color: #fff;
+}
+
+/* Twitter Feed Home Page */
+
+.blog-tweet {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-2 {
+  width: 480px;
+  padding: 0 2em 0 1.5em;
+}
+
+.sidebar-2 ul {
+  list-style: none;
+}
+
+.sidebar-2 .widget-title {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 6.5em;
+}
+
+.twitter-follow-container {
+  color: #45ac9d;
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  text-transform: uppercase;
+}
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (minwidth: 768px) {
     .blog-post {
       width: 50%;
       float: left;
